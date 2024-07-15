@@ -13,8 +13,29 @@ html {
 body {
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  background: #0f0112;
+  color: #fff;
 }
 
 h1 {
   font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.span-gradient {
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+  color: transparent;
+  background-clip: text;
 }
