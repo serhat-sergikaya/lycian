@@ -179,8 +179,8 @@ a {
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
-  opacity: 0.5;
-  transform: all 0.3s linear;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 .collapsible .collapsible__chevron {
@@ -199,18 +199,50 @@ a {
 /* Nav */
 
 .nav {
-  background: #31033b;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #31033b;
 }
 
 .nav__item {
-  padding: 0.5rem 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-white);
 }
+
+.nav__item > a {
+  color: #d2d0db;
+  font-size: 3rem;
+}
+
+.nav__item > a:hover {
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
 .nav__list {
   width: 100%;
   margin: 0;
+}
+
+.nav__burger {
+  color: #d2d0db;
+  border-radius: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+  border: 2px solid #d2d0db;
+}
+
+.nav.collapsible--expanded .nav__burger {
+  opacity: 1;
+  box-shadow: 0 0 0 5px #666;
 }
 
 .logo__text {
@@ -218,5 +250,28 @@ a {
   letter-spacing: 7px;
   font-size: 4rem;
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 1rem;
+}
+
+.logo__img {
+  vertical-align: sub;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__burger {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    width: auto;
+  }
+  .nav__item {
+    margin: 0 2rem;
+    border: none;
+  }
+
+  .nav__item > a {
+    font-size: 2.4rem;
+  }
 }
