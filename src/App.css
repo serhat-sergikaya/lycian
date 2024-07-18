@@ -203,18 +203,17 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #31033b;
 }
 
 .nav__item {
   padding: 1rem 0;
-  border-bottom: 1px solid var(--color-white);
+  border-bottom: 1px solid rgba(30, 10, 30, 0.9);
 }
 
 .nav__item > a {
   color: #d2d0db;
   font-size: 3rem;
+  font-weight: 600;
 }
 
 .nav__item > a:hover {
@@ -229,7 +228,7 @@ a {
 
 .nav__list {
   width: 100%;
-  margin: 0;
+  margin: 3rem 0;
 }
 
 .nav__burger {
@@ -265,6 +264,7 @@ a {
   .nav__list {
     display: flex;
     width: auto;
+    margin: 0;
   }
   .nav__item {
     margin: 0 2rem;
@@ -274,4 +274,71 @@ a {
   .nav__item > a {
     font-size: 2.4rem;
   }
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  gap: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Hero */
+
+.grid.hero {
+  align-items: center;
+  margin-top: 0rem;
+}
+
+.hero__header {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__header {
+    font-size: 5rem;
+  }
+
+  .grid.hero {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__header {
+    font-size: 6rem;
+    text-align: left;
+  }
+}
+
+/* Blocks */
+
+.block {
+  padding: 1.5rem 2rem;
+}
+
+.block--gradient {
+  height: 100vh;
+  background: rgb(37, 20, 108);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 20, 108, 1) 33%,
+    rgba(11, 1, 24, 1) 80%
+  );
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }

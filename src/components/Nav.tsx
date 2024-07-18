@@ -4,7 +4,11 @@ import { IoIosMenu } from "react-icons/io";
 const Nav = () => {
   const [flag, setFlag] = useState(true);
   return (
-    <nav className={"nav collapsible" + (flag ? " collapsible--expanded" : "")}>
+    <nav
+      className={
+        "nav collapsible container" + (flag ? " collapsible--expanded" : "")
+      }
+    >
       <div className="nav__logo">
         <img className="logo__img" src="src\assets\lycian-temple.png" alt="" />
         <h1 className="logo__text">LYCIAN</h1>
