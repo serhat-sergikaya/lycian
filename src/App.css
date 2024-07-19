@@ -33,15 +33,16 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -55,12 +56,12 @@ h3 {
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 
   body {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -81,26 +82,45 @@ a {
   text-decoration: none;
 }
 
-.link-arrow {
+.link--arrow {
   font-size: 2rem;
   letter-spacing: 1px;
-  color: var(--color-white);
+  color: #cdd7eb;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.link-arrow::after {
+.link--arrow::after {
   content: "➡";
   margin-left: 5px;
-  transition: margin 0.15s linear;
+  transition: all 0.15s linear;
 }
 
-.link-arrow:hover::after {
+.link--arrow:hover::after {
   margin-left: 15px;
+  background: rgb(15, 92, 204);
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.link--arrow:hover {
+  background: rgb(15, 92, 204);
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+  color: transparent;
+  background-clip: text;
 }
 
 @media screen and (min-width: 768px) {
-  .link-arrow {
+  .link--arrow {
     font-size: 2.5rem;
   }
 }
@@ -115,17 +135,18 @@ a {
   cursor: pointer;
   margin: 0.5rem;
   text-transform: uppercase;
+  text-wrap: nowrap;
 }
 
 .btn--outline {
-  border: 1px solid var(--color-accent);
+  border: 1px solid #ba3104;
   background: transparent;
   border-radius: 10px;
   transition: background-color 0.15s linear;
 }
 
 .btn--outline:hover {
-  background-color: var(--color-accent);
+  background-color: #ba3104;
 }
 
 .btn--outline--right {
@@ -149,7 +170,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .btn {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -320,13 +341,25 @@ a {
   width: 100%;
 }
 
+.hero__link {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
+  .hero__link {
+    justify-items: center;
+  }
   .hero__header {
     font-size: 5rem;
   }
 
   .grid.hero {
     margin-top: 10rem;
+  }
+
+  .hero__link {
+    justify-content: flex-end;
   }
 }
 
@@ -352,7 +385,61 @@ a {
   );
 }
 
+.block--team {
+  background: rgba(37, 20, 108, 1);
+}
+
+.block__header {
+  background: rgb(87, 188, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(87, 188, 253, 1) 24%,
+    rgba(175, 248, 251, 1) 65%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Media */
+
+.media {
+  background-color: rgb(24, 10, 82);
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 0 3px 1px rgb(16, 5, 61);
+}
+
+.media__content {
+  margin: 0 2rem;
+}
+
+.media__header {
+  color: #f18a90;
+  margin-top: 1rem;
+}
+
+.media__img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.media__button {
+  margin: 1rem 0;
+}
+
+.block--team__grid {
+  gap: 3rem;
+}
+
+.media-button-container {
+  display: flex;
+  justify-content: end;
 }

@@ -4,6 +4,7 @@ import apiClient from "./services/api-client";
 import { IoIosMenu } from "react-icons/io";
 import Nav from "./components/Nav";
 import HeroBlock from "./components/HeroBlock";
+import TeamBlock from "./components/TeamBlock";
 
 function App() {
   const [flag, setFlag] = useState(true);
@@ -12,6 +13,7 @@ function App() {
     <>
       <Nav />
       <HeroBlock />
+      <TeamBlock />
     </>
   );
 }
