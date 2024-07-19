@@ -10,7 +10,7 @@
   --color-secondary: #0f5ccc;
   --color-primary: #c613ec;
   --color-white: #f5f5f5;
-  --color-accent: #9f0647;
+  --color-accent: #d93809;
   --color-background: #0f0112;
 }
 
@@ -117,6 +117,9 @@ a {
   );
   color: transparent;
   background-clip: text;
+}
+.link--social {
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 768px) {
@@ -255,6 +258,7 @@ a {
 .nav__list {
   width: 100%;
   margin: 3rem 0;
+  text-align: center;
 }
 
 .nav__burger {
@@ -308,7 +312,7 @@ a {
   }
 
   .nav__item > a {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -421,7 +425,7 @@ a {
 }
 
 .media__header {
-  color: #f18a90;
+  color: #d93809;
   margin-top: 1rem;
 }
 
@@ -442,4 +446,50 @@ a {
 .media-button-container {
   display: flex;
   justify-content: end;
+}
+
+.media__image-container {
+  position: relative;
+  transition: opacity 0.3s ease-in;
+}
+
+.media__icons-container {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+.media__image-container:hover .media__icons-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.media__image-container:hover {
+  opacity: 0.7;
+}
+
+.media__icon {
+  margin: 0.7rem;
+  padding: 3px;
+  background-color: #d93809;
+  transition: all 0.3s;
+}
+
+.media__icon:hover {
+  background-color: #fc5523;
+}
+
+/* Icons */
+
+.icon--accent {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
 }

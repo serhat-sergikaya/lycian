@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaFacebookF } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 
 const Nav = () => {
@@ -10,16 +11,14 @@ const Nav = () => {
           "nav collapsible container" + (flag ? " collapsible--expanded" : "")
         }
       >
-        <div className="nav__logo">
-          <a href="#">
-            <img
-              className="logo__img"
-              src="src\assets\lycian-temple.png"
-              alt=""
-            />
-            <h1 className="logo__text">LYCIAN</h1>
-          </a>
-        </div>
+        <a href="#" className="nav__logo">
+          <img
+            className="logo__img"
+            src="src\assets\lycian-temple.png"
+            alt=""
+          />
+          <h1 className="logo__text">LYCIAN</h1>
+        </a>
         <IoIosMenu
           className="nav__burger"
           onClick={() => setFlag(!flag)}
