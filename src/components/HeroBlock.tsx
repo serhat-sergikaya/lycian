@@ -9,7 +9,7 @@ const HeroBlock = () => {
           </h1>
           <div className="hero__link">
             <a href="" className="link--arrow">
-              get started{" "}
+              get started
             </a>
           </div>
         </div>

@@ -38,7 +38,6 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  text-align: center;
 }
 
 h3 {
@@ -154,6 +153,17 @@ a {
 
 .btn--outline--right {
   border-radius: 30px 0px;
+}
+
+.btn--outline--blue {
+  border: 1px solid rgba(87, 188, 253, 1);
+  background: transparent;
+  border-radius: 10px;
+  transition: background-color 0.15s linear;
+}
+
+.btn--outline--blue:hover {
+  background-color: rgba(87, 188, 253, 1);
 }
 
 .btn--outline--left {
@@ -323,6 +333,13 @@ a {
   gap: 5px;
 }
 
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -380,6 +397,10 @@ a {
   padding: 1.5rem 2rem;
 }
 
+.block > h2 {
+  text-align: center;
+}
+
 .block--gradient {
   background: rgb(37, 20, 108);
   background: linear-gradient(
@@ -389,11 +410,22 @@ a {
   );
 }
 
-.block--team {
+.block--purple {
   background: rgba(37, 20, 108, 1);
 }
 
-.block__header {
+.block--team__header {
+  background: rgba(217, 56, 9, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(217, 56, 9, 1) 24%,
+    rgba(247, 115, 32, 1) 65%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.block--blog__header {
   background: rgb(87, 188, 253);
   background: linear-gradient(
     0deg,
@@ -422,6 +454,8 @@ a {
 
 .media__content {
   margin: 0 2rem;
+  text-align: justify;
+  word-break: break-all;
 }
 
 .media__header {
@@ -476,7 +510,7 @@ a {
 }
 
 .media__icon {
-  margin: 0.7rem;
+  margin: 0.2rem 1rem;
   padding: 3px;
   background-color: #d93809;
   transition: all 0.3s;
@@ -492,4 +526,40 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 3px;
+}
+
+/* Cards */
+
+.card {
+  background: rgb(24, 10, 82);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 1px rgb(16, 5, 61);
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+}
+
+.card__header {
+  margin-top: 0;
+  font-size: 2rem;
+  color: rgba(87, 188, 253, 1);
+}
+
+.card__content {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.card__date {
+  margin-top: 0;
+  opacity: 0.7;
 }
