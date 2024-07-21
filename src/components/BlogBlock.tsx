@@ -1,7 +1,15 @@
 const BlogBlock = () => {
   return (
-    <section className="block block--purple">
-      <h2 className="block--blog__header">Blog and News</h2>
+    <section className="block block--gradient-reverse">
+      <div className="block__topic">
+        <h2 className="block__header">Blog and News</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum,
+          saepe consequatur, voluptatum quae cupiditate soluta, alias nemo
+          consequuntur ab magnam molestias sed assumenda doloribus natus
+          praesentium explicabo reiciendis tempore.
+        </p>
+      </div>
       <div className="container grid grid--1x3">
         <article className="card">
           <img className="card__image" src="src\assets\blog1.png" alt="" />
@@ -14,7 +22,7 @@ const BlogBlock = () => {
               quaerat error vero placeat alias magnam asperiores ex ipsa, in
               optio voluptatibus minima maxime!
             </p>
-            <button className="btn btn--outline--blue btn--outline--left">
+            <button className="btn btn--outline--left btn--filled-blue">
               Read more
             </button>
           </div>
@@ -32,7 +40,7 @@ const BlogBlock = () => {
               quaerat error vero placeat alias magnam asperiores ex ipsa, in
               optio voluptatibus minima maxime!
             </p>
-            <button className="btn btn--outline--blue btn--outline--left">
+            <button className="btn btn--outline--left btn--filled-blue">
               Read more
             </button>
           </div>
@@ -50,7 +58,7 @@ const BlogBlock = () => {
               quaerat error vero placeat alias magnam asperiores ex ipsa, in
               optio voluptatibus minima maxime!
             </p>
-            <button className="btn btn--outline--blue btn--outline--left">
+            <button className="btn btn--outline--left btn--filled-blue">
               Read more
             </button>
           </div>

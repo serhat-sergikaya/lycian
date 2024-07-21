@@ -2,8 +2,16 @@ import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const TeamBlock = () => {
   return (
-    <section className="block block--purple">
-      <h2 className="block--team__header">Meet Our Team</h2>
+    <section className="block block--gradient-reverse-again">
+      <div className="block__topic">
+        <h2 className="block__header">Meet Our Team</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum,
+          saepe consequatur, voluptatum quae cupiditate soluta, alias nemo
+          consequuntur ab magnam molestias sed assumenda doloribus natus
+          praesentium explicabo reiciendis tempore.
+        </p>
+      </div>
       <div className="grid grid--1x2 container block--team__grid">
         <article className="media">
           <div className="media__image-container">

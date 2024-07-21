@@ -7,6 +7,7 @@ import HeroBlock from "./components/HeroBlock";
 import TeamBlock from "./components/TeamBlock";
 import { FaFacebookF } from "react-icons/fa";
 import BlogBlock from "./components/BlogBlock";
+import FeaturesBlock from "./components/FeaturesBlock";
 
 function App() {
   const [flag, setFlag] = useState(true);
@@ -15,6 +16,7 @@ function App() {
     <>
       <Nav />
       <HeroBlock />
+      <FeaturesBlock />
       <TeamBlock />
       <BlogBlock />
     </>

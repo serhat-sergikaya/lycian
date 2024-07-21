@@ -155,15 +155,15 @@ a {
   border-radius: 30px 0px;
 }
 
-.btn--outline--blue {
-  border: 1px solid rgba(87, 188, 253, 1);
-  background: transparent;
+.btn--filled-blue {
+  background: rgba(87, 188, 253, 1);
   border-radius: 10px;
   transition: background-color 0.15s linear;
+  border: none;
 }
 
-.btn--outline--blue:hover {
-  background-color: rgba(87, 188, 253, 1);
+.btn--filled-blue:hover {
+  background: rgba(54, 140, 207, 1);
 }
 
 .btn--outline--left {
@@ -198,6 +198,15 @@ a {
 
 .icon {
   width: 50px;
+}
+
+.icon--arrow {
+  color: rgba(198, 19, 236, 1);
+  transition: color 0.3s;
+}
+
+.icon--arrow:hover {
+  color: rgba(154, 8, 199, 1);
 }
 
 /* Collapsibles */
@@ -376,7 +385,7 @@ a {
   }
 
   .grid.hero {
-    margin-top: 10rem;
+    margin-top: 20rem;
   }
 
   .hero__link {
@@ -397,10 +406,6 @@ a {
   padding: 1.5rem 2rem;
 }
 
-.block > h2 {
-  text-align: center;
-}
-
 .block--gradient {
   background: rgb(37, 20, 108);
   background: linear-gradient(
@@ -408,32 +413,52 @@ a {
     rgba(37, 20, 108, 1) 33%,
     rgba(11, 1, 24, 1) 90%
   );
+  height: 100vh;
+}
+
+.block--gradient-reverse {
+  padding-top: 20rem;
+  background: rgb(37, 20, 108);
+  background: linear-gradient(
+    0deg,
+    rgba(25, 5, 51, 1) 10%,
+    rgba(37, 20, 108, 1) 90%
+  );
+}
+
+.block--gradient-reverse-again {
+  padding-top: 20em;
+  background: rgb(37, 20, 108);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 20, 108, 1) 10%,
+    rgba(25, 5, 51, 1) 90%
+  );
 }
 
 .block--purple {
   background: rgba(37, 20, 108, 1);
 }
 
-.block--team__header {
-  background: rgba(217, 56, 9, 1);
-  background: linear-gradient(
-    0deg,
-    rgba(217, 56, 9, 1) 24%,
-    rgba(247, 115, 32, 1) 65%
-  );
-  color: transparent;
-  background-clip: text;
+.block__topic {
+  text-align: center;
+  max-width: 570px;
+  margin: auto;
+  color: rgba(173, 187, 215, 1);
 }
 
-.block--blog__header {
-  background: rgb(87, 188, 253);
+.block__header {
+  margin: 0;
+  background: rgb(205, 215, 235);
   background: linear-gradient(
     0deg,
-    rgba(87, 188, 253, 1) 24%,
-    rgba(175, 248, 251, 1) 65%
+    rgba(205, 215, 235, 1) 24%,
+    rgba(173, 187, 215, 1) 75%
   );
   color: transparent;
   background-clip: text;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(11, 1, 24, 0.4);
 }
 
 .container {
@@ -441,10 +466,20 @@ a {
   margin: 0 auto;
 }
 
+.container--third {
+  max-width: 760px;
+  margin: auto;
+}
+
 /* Media */
 
 .media {
-  background-color: rgb(24, 10, 82);
+  background: rgb(19, 35, 125);
+  background: linear-gradient(
+    180deg,
+    rgba(19, 35, 125, 1) 5%,
+    rgba(24, 10, 82, 1) 50%
+  );
   border-radius: 10px;
   overflow: hidden;
   display: grid;
@@ -456,6 +491,7 @@ a {
   margin: 0 2rem;
   text-align: justify;
   word-break: break-all;
+  color: var(--color-white);
 }
 
 .media__header {
@@ -562,4 +598,100 @@ a {
 .card__date {
   margin-top: 0;
   opacity: 0.7;
+}
+
+/* Features */
+
+.features__image {
+  width: 100%;
+}
+
+.features__header {
+  font-size: 2.5rem;
+  text-align: center;
+  background: rgb(241, 156, 122);
+  background: linear-gradient(
+    270deg,
+    rgba(241, 156, 122, 1) 10%,
+    rgba(240, 187, 87, 1) 80%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.features__sub {
+  font-size: 1.8rem;
+  color: rgba(173, 187, 215, 1);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__header {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .features__sub {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features__header {
+    font-size: 3.2rem;
+  }
+  .features__sub {
+    font-size: 2.1rem;
+  }
+}
+
+/* List */
+
+.list {
+  list-style: none;
+  padding-left: none;
+}
+
+.list--tick {
+  list-style-image: url(/src/assets/tick.png);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Investment */
+
+.investment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: rgb(24, 10, 82);
+  background: linear-gradient(
+    346deg,
+    rgba(24, 10, 82, 1) 20%,
+    rgba(63, 10, 82, 1) 68%
+  );
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 1px 2px rgba(24, 10, 82, 1);
+}
+
+.investment__icon {
+  width: 100%;
+}
+
+.investment__heading {
+  margin: 0.7rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(11, 1, 24, 0.5);
+  border-top: 1px solid rgba(11, 1, 24, 0.5);
+  padding: 0.7rem 0;
+  letter-spacing: 2px;
+  color: #cdd7eb;
 }
