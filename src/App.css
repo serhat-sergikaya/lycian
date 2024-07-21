@@ -79,12 +79,12 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #cdd7eb;
 }
 
 .link--arrow {
   font-size: 2rem;
   letter-spacing: 1px;
-  color: #cdd7eb;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -198,15 +198,16 @@ a {
 
 .icon {
   width: 50px;
+  height: 50px;
 }
 
 .icon--arrow {
-  color: rgba(198, 19, 236, 1);
+  color: #cdd7eb;
   transition: color 0.3s;
-}
-
-.icon--arrow:hover {
-  color: rgba(154, 8, 199, 1);
+  margin: 0.5rem 0;
+  border-radius: 100%;
+  background-color: rgba(63, 10, 82, 1);
+  transition: all 0.3s;
 }
 
 /* Collapsibles */
@@ -224,6 +225,9 @@ a {
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
+}
+.collapsible__chevron {
+  transition: all 0.3;
 }
 
 .collapsible .collapsible__chevron {
@@ -406,6 +410,10 @@ a {
   padding: 1.5rem 2rem;
 }
 
+.block > .grid {
+  align-items: center;
+}
+
 .block--gradient {
   background: rgb(37, 20, 108);
   background: linear-gradient(
@@ -413,11 +421,11 @@ a {
     rgba(37, 20, 108, 1) 33%,
     rgba(11, 1, 24, 1) 90%
   );
-  height: 100vh;
+  height: 80vh;
 }
 
 .block--gradient-reverse {
-  padding-top: 20rem;
+  padding: 10rem 0;
   background: rgb(37, 20, 108);
   background: linear-gradient(
     0deg,
@@ -427,7 +435,7 @@ a {
 }
 
 .block--gradient-reverse-again {
-  padding-top: 20em;
+  padding: 10rem 0;
   background: rgb(37, 20, 108);
   background: linear-gradient(
     0deg,
@@ -436,8 +444,14 @@ a {
   );
 }
 
-.block--purple {
-  background: rgba(37, 20, 108, 1);
+.block--gradient-last {
+  padding: 20rem 0;
+  background: rgb(37, 20, 108);
+  background: linear-gradient(
+    0deg,
+    rgba(11, 1, 24, 1) 10%,
+    rgba(37, 20, 108, 1) 90%
+  );
 }
 
 .block__topic {
@@ -469,6 +483,16 @@ a {
 .container--third {
   max-width: 760px;
   margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block--gradient-reverse {
+    padding: 15rem 0;
+  }
+
+  .block--gradient-reverse-again {
+    padding: 15rem 0;
+  }
 }
 
 /* Media */
@@ -520,7 +544,7 @@ a {
 
 .media__image-container {
   position: relative;
-  transition: opacity 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .media__icons-container {
@@ -549,7 +573,7 @@ a {
   margin: 0.2rem 1rem;
   padding: 3px;
   background-color: #d93809;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .media__icon:hover {
@@ -574,6 +598,7 @@ a {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
+  height: 52rem;
 }
 
 .card__image {
@@ -624,6 +649,9 @@ a {
   color: rgba(173, 187, 215, 1);
   text-align: center;
 }
+.features__desc {
+  font-size: 1.4rem;
+}
 
 @media screen and (min-width: 768px) {
   .features__header {
@@ -665,6 +693,11 @@ a {
 
 /* Investment */
 
+.investments-grid {
+  justify-items: center;
+  gap: 2rem;
+}
+
 .investment {
   display: flex;
   flex-direction: column;
@@ -679,6 +712,16 @@ a {
   border-radius: 20px;
   padding: 1.5rem 2rem;
   box-shadow: 0 0 1px 2px rgba(24, 10, 82, 1);
+  max-width: 20rem;
+  transition: all 0.3s ease-in;
+}
+
+.investment:hover {
+  background: rgba(63, 10, 82, 1);
+}
+
+.investment:hover .icon--arrow {
+  background: rgba(24, 10, 82, 1);
 }
 
 .investment__icon {
@@ -694,4 +737,71 @@ a {
   padding: 0.7rem 0;
   letter-spacing: 2px;
   color: #cdd7eb;
+}
+
+/* Footer */
+
+.footer-block {
+  background: rgba(11, 1, 24, 1);
+}
+
+.footer__list > li {
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+}
+
+.footer__list-link {
+  transition: color 0.3s;
+  color: hsl(287, 67%, 38%);
+}
+
+.footer__list-link:hover {
+  color: rgb(201, 46, 209);
+}
+
+.footer__section-header {
+  color: hsl(334, 87%, 77%);
+}
+
+.footer__list {
+  margin: 0;
+}
+
+.footer__section-header {
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.footer__logo {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 2rem;
+  color: #f5f5f5;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-sections {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__section-header {
+    border-bottom: 1px solid hsla(300, 54%, 62%, 0.3);
+    justify-content: center;
+  }
 }

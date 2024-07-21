@@ -1,6 +1,6 @@
 const BlogBlock = () => {
   return (
-    <section className="block block--gradient-reverse">
+    <section className="block block--gradient-last">
       <div className="block__topic">
         <h2 className="block__header">Blog and News</h2>
         <p>
