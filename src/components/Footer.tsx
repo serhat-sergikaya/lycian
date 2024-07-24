@@ -5,7 +5,7 @@ const Footer = () => {
   const [sec2, setSec2] = useState(false);
   const [sec3, setSec3] = useState(false);
   return (
-    <footer className="block footer-block footer ">
+    <footer className="block footer ">
       <div className="container grid footer-sections">
         <section
           onClick={() => setSec1(!sec1)}

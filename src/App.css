@@ -407,7 +407,7 @@ a {
 /* Blocks */
 
 .block {
-  padding: 1.5rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .block > .grid {
@@ -421,11 +421,9 @@ a {
     rgba(37, 20, 108, 1) 33%,
     rgba(11, 1, 24, 1) 90%
   );
-  height: 80vh;
 }
 
 .block--gradient-reverse {
-  padding: 10rem 0;
   background: rgb(37, 20, 108);
   background: linear-gradient(
     0deg,
@@ -434,8 +432,17 @@ a {
   );
 }
 
+.block--gradient-middle {
+  background: rgb(25, 5, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(25, 5, 51, 1) 5%,
+    rgba(37, 20, 108, 1) 50%,
+    rgba(25, 5, 51, 1) 95%
+  );
+}
+
 .block--gradient-reverse-again {
-  padding: 10rem 0;
   background: rgb(37, 20, 108);
   background: linear-gradient(
     0deg,
@@ -445,7 +452,6 @@ a {
 }
 
 .block--gradient-last {
-  padding: 20rem 0;
   background: rgb(37, 20, 108);
   background: linear-gradient(
     0deg,
@@ -741,18 +747,19 @@ a {
 
 /* Footer */
 
-.footer-block {
+.footer {
   background: rgba(11, 1, 24, 1);
 }
 
 .footer__list > li {
   margin-bottom: 1.5rem;
   font-size: 2.4rem;
+  text-align: center;
 }
 
 .footer__list-link {
   transition: color 0.3s;
-  color: hsl(287, 67%, 38%);
+  color: rgba(173, 187, 215, 1);
 }
 
 .footer__list-link:hover {
@@ -803,5 +810,141 @@ a {
   .footer__section-header {
     border-bottom: 1px solid hsla(300, 54%, 62%, 0.3);
     justify-content: center;
+  }
+}
+
+/* Table */
+
+.table {
+  font-size: 1.3rem;
+  width: 100%;
+  color: #cdd7eb;
+  font-weight: 600;
+  border-collapse: collapse;
+}
+
+.table-row {
+  height: 7rem;
+  border-bottom: 1px solid rgba(121, 5, 115, 0.473);
+}
+
+.table-row {
+  height: 7rem;
+  border-bottom: 1px solid rgba(121, 5, 115, 0.473);
+}
+
+.table-row:hover {
+}
+
+td,
+th {
+  padding: 1rem;
+}
+
+thead {
+  font-size: 1.5rem;
+  color: #cdd7eb;
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+  height: 8rem;
+}
+
+.table__name {
+  text-align: left;
+}
+.table__name-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.table__data-col {
+  text-align: right;
+}
+
+.table__image {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.page {
+  font-size: 2rem;
+  font-weight: 600;
+  background: white;
+  width: 30px;
+  height: 30px;
+  color: rgba(63, 10, 82, 1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin: 2rem 1rem;
+  transition: background 0.3s ease-in;
+}
+
+.page:hover {
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+}
+
+.page--highlighted {
+  background: linear-gradient(
+    25deg,
+    rgba(15, 92, 204, 1) 0%,
+    rgba(198, 19, 236, 1) 95%
+  );
+}
+
+.paging {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.market__heading {
+  text-align: center;
+}
+
+th:nth-child(4) {
+  display: none;
+}
+
+th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+td:nth-child(4) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .table {
+    font-size: 2rem;
+  }
+  thead {
+    font-size: 2.2rem;
+  }
+
+  .page {
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+  }
+  .table__image {
+    width: 5rem;
+  }
+
+  th:nth-child(4) {
+    display: table-cell;
+    border-radius: 0 10px 10px 0px;
+  }
+  td:nth-child(4) {
+    display: table-cell;
   }
 }
