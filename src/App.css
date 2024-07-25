@@ -877,7 +877,7 @@ thead {
   width: 30px;
   height: 30px;
   color: rgba(63, 10, 82, 1);
-  border-radius: 50px;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
