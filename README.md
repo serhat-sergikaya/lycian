@@ -7,7 +7,7 @@
  React Query is used for API calls, Zustand for Global State Management and React Router for navigation.
  
   Check it out
- 👉  [Live Demo](https://www.coingecko.com/en/api)
+ 👉  [Live Demo](https://lycian.vercel.app/)
 
  ## Built with:
 ![image](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
