@@ -18,7 +18,7 @@ const Footer = () => {
             <h2 className="collapsible__heading">Explore</h2>
             <img
               className="icon collapsible__chevron"
-              src="src\assets\chevron.png"
+              src="static\Images\chevron.png"
               alt=""
             />
           </header>
@@ -58,7 +58,7 @@ const Footer = () => {
             <h2 className="collapsible__heading">Company</h2>
             <img
               className="icon collapsible__chevron"
-              src="src\assets\chevron.png"
+              src="static\Images\chevron.png"
               alt=""
             />
           </header>
@@ -98,7 +98,7 @@ const Footer = () => {
             <h2 className="collapsible__heading">Marketplace</h2>
             <img
               className="icon collapsible__chevron"
-              src="src\assets\chevron.png"
+              src="static\Images\chevron.png"
               alt=""
             />
           </header>

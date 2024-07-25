@@ -13,7 +13,7 @@ const Nav = () => {
         <a href="#" className="nav__logo">
           <img
             className="logo__img"
-            src="src\assets\lycian-temple.png"
+            src="\static\Images\lycian-temple.png"
             alt=""
           />
           <h1 className="logo__text">LYCIAN</h1>

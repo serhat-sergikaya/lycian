@@ -12,7 +12,7 @@ const BlogBlock = () => {
       </div>
       <div className="container grid grid--1x3">
         <article className="card">
-          <img className="card__image" src="src\assets\blog1.png" alt="" />
+          <img className="card__image" src="static\Images\blog1.png" alt="" />
           <div className="card__content">
             <p className="card__date">20 July 2024</p>
             <h3 className="card__header">Launch your own crypto currency</h3>
@@ -28,7 +28,7 @@ const BlogBlock = () => {
           </div>
         </article>
         <article className="card">
-          <img className="card__image" src="src\assets\blog2.png" alt="" />
+          <img className="card__image" src="static\Images\blog2.png" alt="" />
           <div className="card__content">
             <p className="card__date">18 July 2024</p>
             <h3 className="card__header">
@@ -46,7 +46,7 @@ const BlogBlock = () => {
           </div>
         </article>
         <article className="card">
-          <img className="card__image" src="src\assets\blog3.png" alt="" />
+          <img className="card__image" src="static\Images\blog3.png" alt="" />
           <div className="card__content">
             <p className="card__date">15 July 2024</p>
             <h3 className="card__header">

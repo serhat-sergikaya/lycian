@@ -6,13 +6,17 @@ const FeaturesBlock = () => {
         <picture>
           <source
             type="image/webp"
-            srcSet="src/assets/invest.webp 1x, src/assets/invest@2x.webp"
+            srcSet="static\Images\invest.webp 1x, static\Images\invest@2x.webp"
           />
           <source
             type="image/png"
-            srcSet="src/assets/invest.png 1x, src/assets/invest@2x.png"
+            srcSet="static\Images\invest.png 1x, static\Images\invest@2x.png"
           />
-          <img className="features__image" src="src\assets\invest.png" alt="" />
+          <img
+            className="features__image"
+            src="static\Images\invest.png"
+            alt=""
+          />
         </picture>
         <div className="features__content">
           <h2 className="features__header">
@@ -42,7 +46,7 @@ const FeaturesBlock = () => {
           <article className="investment">
             <img
               className="investment__icon"
-              src="src\assets\staking.png"
+              src="static\Images\staking.png"
               alt=""
             />
             <h3 className="investment__heading">staking</h3>
@@ -53,7 +57,7 @@ const FeaturesBlock = () => {
           <article className="investment">
             <img
               className="investment__icon"
-              src="src\assets\automation.png"
+              src="static\Images\automation.png"
               alt=""
             />
             <h3 className="investment__heading">automate</h3>
@@ -64,7 +68,7 @@ const FeaturesBlock = () => {
           <article className="investment">
             <img
               className="investment__icon"
-              src="src\assets\wallet.png"
+              src="static\Images\wallet.png"
               alt=""
             />
             <h3 className="investment__heading">WALLET</h3>

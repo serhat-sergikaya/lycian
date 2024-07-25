@@ -15,7 +15,11 @@ const TeamBlock = () => {
       <div className="grid grid--1x2 container block--team__grid">
         <article className="media">
           <div className="media__image-container">
-            <img src="src\assets\member1.jpg" alt="" className="media__img" />
+            <img
+              src="static\Images\member1.jpg"
+              alt=""
+              className="media__img"
+            />
             <div className="media__icons-container ">
               <a href="#" className="link--social">
                 <FaFacebookF className="icon--accent media__icon" />
@@ -43,7 +47,11 @@ const TeamBlock = () => {
         </article>
         <article className="media">
           <div className="media__image-container">
-            <img src="src\assets\member3.jpg" alt="" className="media__img" />
+            <img
+              src="static\Images\member3.jpg"
+              alt=""
+              className="media__img"
+            />
             <div className="media__icons-container ">
               <a href="#" className="link--social">
                 <FaFacebookF className="icon--accent media__icon" />
@@ -71,7 +79,11 @@ const TeamBlock = () => {
         </article>
         <article className="media">
           <div className="media__image-container">
-            <img src="src\assets\member2.jpg" alt="" className="media__img" />
+            <img
+              src="static\Images\member2.jpg"
+              alt=""
+              className="media__img"
+            />
             <div className="media__icons-container ">
               <a href="#" className="link--social">
                 <FaFacebookF className="icon--accent media__icon" />
@@ -102,13 +114,17 @@ const TeamBlock = () => {
             <picture>
               <source
                 type="image/webp"
-                srcSet="src\assets\member4.webp 1x, src\assets\member4@x.webp 2x "
+                srcSet="static\Images\member4.webp 1x, static\Images\member4@x.webp 2x "
               />
               <source
                 type="image/png"
-                srcSet="src\assets\member4.jpg 1x, src\assets\member4@2x.jpg 2x "
+                srcSet="static\Images\member4.jpg 1x, static\Images\member4@2x.jpg 2x "
               />
-              <img src="src\assets\member4.jpg" alt="" className="media__img" />
+              <img
+                src="static\Images\member4.jpg"
+                alt=""
+                className="media__img"
+              />
             </picture>
             <div className="media__icons-container ">
               <a href="#" className="link--social">
