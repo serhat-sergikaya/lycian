@@ -1,6 +1,5 @@
-import { useState } from "react";
 import apiClient from "../services/api-client";
-import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
+import { useQuery} from "@tanstack/react-query";
 
 interface Coin {
   id: string;

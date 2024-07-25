@@ -3,7 +3,17 @@ const FeaturesBlock = () => {
   return (
     <section className="block block--gradient-reverse">
       <div className="container grid grid--1x2">
-        <img className="features__image" src="src\assets\invest.png" alt="" />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="src/assets/invest.webp 1x, src/assets/invest@2x.webp"
+          />
+          <source
+            type="image/png"
+            srcSet="src/assets/invest.png 1x, src/assets/invest@2x.png"
+          />
+          <img className="features__image" src="src\assets\invest.png" alt="" />
+        </picture>
         <div className="features__content">
           <h2 className="features__header">
             We invent new ways for you to invest

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Footer = () => {
   const [sec1, setSec1] = useState(true);

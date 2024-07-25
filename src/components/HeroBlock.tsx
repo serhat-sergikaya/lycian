@@ -13,7 +13,7 @@ const HeroBlock = () => {
             </a>
           </div>
         </div>
-        <img className="hero__image" src="src\assets\blockchain.png" alt="" />
+        <img className="hero__image" src="src/assets/blockchain.png" alt="" />
       </div>
     </section>
   );

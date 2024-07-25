@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FaFacebookF } from "react-icons/fa";
+import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 
 const Nav = () => {
@@ -29,13 +28,13 @@ const Nav = () => {
             <a href="#">Home</a>
           </li>
           <li className="nav__item">
-            <a href="#">Menu</a>
+            <a href="#">Market</a>
           </li>
           <li className="nav__item">
-            <a href="#">Menu</a>
+            <a href="#">Team</a>
           </li>
           <li className="nav__item">
-            <a href="#">Menu</a>
+            <a href="#">Blog</a>
           </li>
         </ul>
       </div>

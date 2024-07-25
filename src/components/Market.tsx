@@ -1,12 +1,11 @@
 import { useState } from "react";
 import useMarket from "../hooks/useMarket";
 import Change from "./Change";
-import { CgSpinner } from "react-icons/cg";
 
 const Market = () => {
   const [page, setPage] = useState(1);
 
-  const { data: coins, error, isLoading } = useMarket(page);
+  const { data: coins, error } = useMarket(page);
 
   if (error) throw error;
 
