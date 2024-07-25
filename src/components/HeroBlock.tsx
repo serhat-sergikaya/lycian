@@ -15,7 +15,7 @@ const HeroBlock = () => {
         </div>
         <img
           className="hero__image"
-          src="public/static/Images/blockchain.png"
+          src="/static/Images/blockchain.png"
           alt=""
         />
       </div>
