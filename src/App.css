@@ -133,7 +133,7 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-white);
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
   margin: 0.5rem;
   text-transform: uppercase;
@@ -184,6 +184,7 @@ a {
 @media screen and (min-width: 768px) {
   .btn {
     font-size: 1.5rem;
+    padding: 1rem 3rem;
   }
 }
 
@@ -688,7 +689,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(/src/assets/tick.png);
+  list-style-image: url(static/Images/tick.png);
   padding-left: 3rem;
 }
 
