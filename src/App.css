@@ -689,7 +689,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(static/Images/tick.png);
+  list-style-image: url(/static/Images/tick.png);
   padding-left: 3rem;
 }
 
