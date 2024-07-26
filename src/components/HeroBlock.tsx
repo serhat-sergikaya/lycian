@@ -13,7 +13,7 @@ const HeroBlock = () => {
             </a>
           </div>
         </div>
-        <picture data-aos="fade-right">
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcSet="static\Images\blockchain.webp 1x, static\Images\blockchain@2x.webp"
