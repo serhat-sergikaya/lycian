@@ -530,6 +530,7 @@ a {
 .media__header {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .media__heading {
@@ -595,9 +596,13 @@ a {
   background-color: #fc5523;
 }
 
-@media screen {
+@media screen and (min-width: 768px) {
   .media__heading {
     font-size: 2rem;
+  }
+
+  .media__header {
+    flex-direction: row;
   }
 
   .media__content {
