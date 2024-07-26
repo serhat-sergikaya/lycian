@@ -13,12 +13,22 @@ const HeroBlock = () => {
             </a>
           </div>
         </div>
-        <img
-          data-aos="fade-left"
-          className="hero__image"
-          src="/static/Images/blockchain.png"
-          alt=""
-        />
+        <picture data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcSet="static\Images\blockchain.webp 1x, static\Images\blockchain@2x.webp"
+          />
+          <source
+            type="image/png"
+            srcSet="static\Images\blockchain.png 1x, static\Images\blockchain@2x.png"
+          />
+          <img
+            data-aos="fade-left"
+            className="hero__image"
+            src="/static/Images/blockchain@2x.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
   );
