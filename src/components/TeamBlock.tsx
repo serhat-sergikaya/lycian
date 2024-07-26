@@ -43,7 +43,10 @@ const TeamBlock = () => {
             </div>
           </div>
           <div className="media__content">
-            <h3 className="media__header"> Jane Smith</h3>
+            <div className="media__header">
+              <h3 className="media__heading"> Jane Smith </h3>
+              <span className="badge">ceo</span>
+            </div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
               aut.
@@ -86,7 +89,10 @@ const TeamBlock = () => {
             </div>
           </div>
           <div className="media__content">
-            <h3 className="media__header"> John Doe </h3>
+            <div className="media__header">
+              <h3 className="media__heading"> John Doe </h3>
+              <span className="badge">cfo</span>
+            </div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
               aut.
@@ -129,7 +135,10 @@ const TeamBlock = () => {
             </div>
           </div>
           <div className="media__content">
-            <h3 className="media__header"> Mary Sue </h3>
+            <div className="media__header">
+              <h3 className="media__heading"> Mary Sue </h3>
+              <span className="badge">coo</span>
+            </div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
               aut.
@@ -172,7 +181,10 @@ const TeamBlock = () => {
             </div>
           </div>
           <div className="media__content">
-            <h3 className="media__header"> Michael Scott </h3>
+            <div className="media__header">
+              <h3 className="media__heading"> Tyrell Wellick</h3>
+              <span className="badge">cto</span>
+            </div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
               aut.

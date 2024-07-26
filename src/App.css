@@ -523,11 +523,19 @@ a {
   text-align: justify;
   word-break: break-all;
   color: var(--color-white);
+  font-size: 1.2rem;
+  color: rgba(173, 187, 215, 0.9);
 }
 
 .media__header {
-  color: #d93809;
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.media__heading {
+  color: var(--color-white);
+  margin: 1rem 0;
+  font-size: 1.5rem;
 }
 
 .media__img {
@@ -585,6 +593,28 @@ a {
 
 .media__icon:hover {
   background-color: #fc5523;
+}
+
+@media screen {
+  .media__heading {
+    font-size: 2rem;
+  }
+
+  .media__content {
+    font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+
+.badge {
+  font-size: 1.2rem;
+  background: #ba3104;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  margin: 0 1rem;
 }
 
 /* Icons */
@@ -873,15 +903,15 @@ thead {
 .page {
   font-size: 2rem;
   font-weight: 600;
-  background: white;
+  background: transparent;
   width: 30px;
   height: 30px;
-  color: rgba(63, 10, 82, 1);
+  color: var(--color-white);
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  border: 1px solid rgba(63, 10, 82, 1);
   cursor: pointer;
   margin: 2rem 1rem;
   transition: background 0.3s ease-in;
