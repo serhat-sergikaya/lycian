@@ -3,7 +3,7 @@ const FeaturesBlock = () => {
   return (
     <section className="block block--gradient-reverse">
       <div className="container grid grid--1x2">
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcSet="static\Images\invest.webp 1x, static\Images\invest@2x.webp"
@@ -18,7 +18,7 @@ const FeaturesBlock = () => {
             alt=""
           />
         </picture>
-        <div className="features__content">
+        <div data-aos="fade-left" className="features__content">
           <h2 className="features__header">
             We invent new ways for you to invest
           </h2>
@@ -41,7 +41,10 @@ const FeaturesBlock = () => {
           </ul>
         </div>
       </div>
-      <div className="container--third  grid grid--1x3 investments-grid">
+      <div
+        data-aos="fade-up"
+        className="container--third  grid grid--1x3 investments-grid"
+      >
         <a href="#">
           <article className="investment">
             <img

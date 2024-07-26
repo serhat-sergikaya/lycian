@@ -13,8 +13,10 @@ const Market = () => {
   return (
     <div className="block block--gradient-middle">
       <div className="container">
-        <h2 className="block__header market__heading">Market Update</h2>
-        <table className="table">
+        <h2 data-aos="fade-down" className="block__header market__heading">
+          Market Update
+        </h2>
+        <table data-aos="fade-up" className="table">
           <thead>
             <tr>
               <th className="table__name">Name</th>

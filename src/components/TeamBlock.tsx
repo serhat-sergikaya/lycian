@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 const TeamBlock = () => {
   return (
     <section className="block block--gradient-reverse-again">
-      <div className="block__topic">
+      <div data-aos="fade-down" className="block__topic">
         <h2 className="block__header">Meet Our Team</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum,
@@ -13,7 +13,7 @@ const TeamBlock = () => {
         </p>
       </div>
       <div className="grid grid--1x2 container block--team__grid">
-        <article className="media">
+        <article data-aos="fade-right" className="media">
           <div className="media__image-container">
             <img
               src="static\Images\member1.jpg"
@@ -45,7 +45,8 @@ const TeamBlock = () => {
             </div>
           </div>
         </article>
-        <article className="media">
+
+        <article data-aos="fade-left" className="media">
           <div className="media__image-container">
             <img
               src="static\Images\member3.jpg"
@@ -77,7 +78,8 @@ const TeamBlock = () => {
             </div>
           </div>
         </article>
-        <article className="media">
+
+        <article data-aos="fade-right" className="media">
           <div className="media__image-container">
             <img
               src="static\Images\member2.jpg"
@@ -109,7 +111,8 @@ const TeamBlock = () => {
             </div>
           </div>
         </article>
-        <article className="media">
+
+        <article data-aos="fade-left" className="media">
           <div className="media__image-container">
             <picture>
               <source

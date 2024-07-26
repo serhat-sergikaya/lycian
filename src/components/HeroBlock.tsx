@@ -2,7 +2,7 @@ const HeroBlock = () => {
   return (
     <section className="block block--gradient">
       <div className="container grid grid--1x2 hero">
-        <div className="hero__heading">
+        <div data-aos="fade-right" className="hero__heading">
           <h1 className="hero__header">
             The <span className="span-gradient">authentic</span> way of trading
             crypto currencies
@@ -14,6 +14,7 @@ const HeroBlock = () => {
           </div>
         </div>
         <img
+          data-aos="fade-left"
           className="hero__image"
           src="/static/Images/blockchain.png"
           alt=""

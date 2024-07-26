@@ -1,7 +1,7 @@
 const BlogBlock = () => {
   return (
     <section className="block block--gradient-last">
-      <div className="block__topic">
+      <div data-aos="fade-down" className="block__topic">
         <h2 className="block__header">Blog and News</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum,
@@ -10,7 +10,7 @@ const BlogBlock = () => {
           praesentium explicabo reiciendis tempore.
         </p>
       </div>
-      <div className="container grid grid--1x3">
+      <div data-aos="fade-up" className="container grid grid--1x3">
         <article className="card">
           <img className="card__image" src="static\Images\blog1.png" alt="" />
           <div className="card__content">

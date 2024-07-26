@@ -6,6 +6,10 @@ import BlogBlock from "./components/BlogBlock";
 import FeaturesBlock from "./components/FeaturesBlock";
 import Footer from "./components/Footer";
 import Market from "./components/Market";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function App() {
   return (
