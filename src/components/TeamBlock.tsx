@@ -18,7 +18,7 @@ const TeamBlock = () => {
             <picture>
               <source
                 type="image/webp"
-                srcSet="static\Images\member1.webp 1x, static\Images\member1@x.webp 2x "
+                srcSet="static\Images\member1.webp 1x, static\Images\member1@2x.webp 2x "
               />
               <source
                 type="image/png"
@@ -61,7 +61,7 @@ const TeamBlock = () => {
             <picture>
               <source
                 type="image/webp"
-                srcSet="static\Images\member3.webp 1x, static\Images\member3@x.webp 2x "
+                srcSet="static\Images\member3.webp 1x, static\Images\member3@2x.webp 2x "
               />
               <source
                 type="image/png"
@@ -104,7 +104,7 @@ const TeamBlock = () => {
             <picture>
               <source
                 type="image/webp"
-                srcSet="static\Images\member2.webp 1x, static\Images\member2@x.webp 2x "
+                srcSet="static\Images\member2.webp 1x, static\Images\member2@2x.webp 2x "
               />
               <source
                 type="image/png"
@@ -147,7 +147,7 @@ const TeamBlock = () => {
             <picture>
               <source
                 type="image/webp"
-                srcSet="static\Images\member4.webp 1x, static\Images\member4@x.webp 2x "
+                srcSet="static\Images\member4.webp 1x, static\Images\member4@2x.webp 2x "
               />
               <source
                 type="image/png"
