@@ -2,9 +2,9 @@
 # About the project
  
  **LYCIAN** is developed to test my css skils therefore there is no functionality except market the section.
- The website is connected to [CoinGecko API](https://developer.themoviedb.org/docs/getting-started). TMDB provides data for movies and series including their details such as cast members, production companies etc.
+ The website is connected to [CoinGecko API](https://developer.themoviedb.org/docs/getting-started). CoinGecko provides realtime data for crypto currencies.
  It also allows to add query parameters to narrow down the search.
- React Query is used for API calls, Zustand for Global State Management and React Router for navigation.
+ React Query is used for API calls and caching.
  
   Check it out
  👉  [Live Demo](https://lycian.vercel.app/)
