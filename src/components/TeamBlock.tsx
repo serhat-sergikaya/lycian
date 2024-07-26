@@ -15,11 +15,21 @@ const TeamBlock = () => {
       <div className="grid grid--1x2 container block--team__grid">
         <article data-aos="fade-right" className="media">
           <div className="media__image-container">
-            <img
-              src="static\Images\member1.jpg"
-              alt=""
-              className="media__img"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="static\Images\member1.webp 1x, static\Images\member1@x.webp 2x "
+              />
+              <source
+                type="image/png"
+                srcSet="static\Images\member1.jpg 1x, static\Images\member1@2x.jpg 2x "
+              />
+              <img
+                src="static\Images\member1.jpg"
+                alt=""
+                className="media__img"
+              />
+            </picture>
             <div className="media__icons-container ">
               <a href="#" className="link--social">
                 <FaFacebookF className="icon--accent media__icon" />
@@ -48,11 +58,21 @@ const TeamBlock = () => {
 
         <article data-aos="fade-left" className="media">
           <div className="media__image-container">
-            <img
-              src="static\Images\member3.jpg"
-              alt=""
-              className="media__img"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="static\Images\member3.webp 1x, static\Images\member3@x.webp 2x "
+              />
+              <source
+                type="image/png"
+                srcSet="static\Images\member3.jpg 1x, static\Images\member3@2x.jpg 2x "
+              />
+              <img
+                src="static\Images\member3.jpg"
+                alt=""
+                className="media__img"
+              />
+            </picture>
             <div className="media__icons-container ">
               <a href="#" className="link--social">
                 <FaFacebookF className="icon--accent media__icon" />
@@ -81,11 +101,21 @@ const TeamBlock = () => {
 
         <article data-aos="fade-right" className="media">
           <div className="media__image-container">
-            <img
-              src="static\Images\member2.jpg"
-              alt=""
-              className="media__img"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="static\Images\member2.webp 1x, static\Images\member2@x.webp 2x "
+              />
+              <source
+                type="image/png"
+                srcSet="static\Images\member2.jpg 1x, static\Images\member2@2x.jpg 2x "
+              />
+              <img
+                src="static\Images\member2.jpg"
+                alt=""
+                className="media__img"
+              />
+            </picture>
             <div className="media__icons-container ">
               <a href="#" className="link--social">
                 <FaFacebookF className="icon--accent media__icon" />
