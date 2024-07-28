@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import Market from "./components/Market";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Newsletter from "./components/Newsletter";
 
 AOS.init();
 
