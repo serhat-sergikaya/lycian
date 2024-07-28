@@ -1,3 +1,5 @@
+import Newsletter from "./Newsletter";
+
 const BlogBlock = () => {
   return (
     <section className="block block--gradient-last">
@@ -64,6 +66,7 @@ const BlogBlock = () => {
           </div>
         </article>
       </div>
+      <Newsletter />
     </section>
   );
 };

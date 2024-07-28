@@ -173,18 +173,29 @@ a {
 .btn--gradient {
   background: rgb(15, 92, 204);
   background: linear-gradient(
-    25deg,
-    rgba(15, 92, 204, 1) 0%,
-    rgba(198, 19, 236, 1) 95%
+    150deg,
+    rgba(15, 92, 204, 1) 20%,
+    rgb(94, 18, 92, 1) 80%
   );
   border: none;
   border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .btn {
     font-size: 1.5rem;
     padding: 1rem 3rem;
+  }
+
+  .btn--gradient {
+    font-size: 2rem;
+    padding: 1.5rem 9rem;
   }
 }
 
@@ -785,6 +796,7 @@ a {
 
 .footer {
   background: rgba(11, 1, 24, 1);
+  padding-top: 0;
 }
 
 .footer__list > li {
@@ -877,6 +889,11 @@ th {
   padding: 1rem;
 }
 
+td {
+  width: 25rem;
+  height: 7rem;
+}
+
 thead {
   font-size: 1.5rem;
   color: #cdd7eb;
@@ -959,9 +976,18 @@ td:nth-child(4) {
   display: none;
 }
 
+th:nth-child(3) {
+  border-radius: 0px 10px 10px 0px;
+}
+
 @media screen and (min-width: 768px) {
   .table {
     font-size: 2rem;
+  }
+
+  td {
+    width: 25rem;
+    height: 9rem;
   }
   thead {
     font-size: 2.2rem;
@@ -983,4 +1009,88 @@ td:nth-child(4) {
   td:nth-child(4) {
     display: table-cell;
   }
+
+  th:nth-child(3) {
+    border-radius: 0;
+  }
+}
+
+/* Newsletter */
+
+.newsletter {
+  background: rgba(87, 188, 253, 1);
+  height: 20rem;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  display: flex;
+  box-shadow: 0 0 4px 1px rgba(54, 140, 207, 1);
+  margin-top: 10rem;
+  align-items: center;
+}
+
+.newsletter__content {
+  margin: 0 2rem;
+  color: hsl(210, 36%, 85%);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.newsletter__heading {
+  color: hsl(302, 68%, 22%);
+  margin: 0;
+}
+
+.newsletter__heading {
+  font-size: 1.5rem;
+}
+.newsletter__img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter__heading {
+    font-size: 3rem;
+  }
+  .newsletter__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .newsletter__content {
+    font-size: 1.8rem;
+  }
+
+  .newsletter {
+    padding: 0 1.5rem;
+    height: 25rem;
+  }
+}
+
+/* Input */
+
+.input {
+  outline: none;
+  border: none;
+  color: hsl(302, 68%, 22%);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  background: var(--color-white);
+}
+
+.input--group {
+  display: flex;
+  background: var(--color-white);
+  border-radius: 20px;
+}
+
+.input--group .input {
+  flex-grow: 1;
+  width: 0;
+}
+
+::placeholder {
+  color: #cdcbd7;
 }
